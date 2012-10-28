@@ -16,11 +16,12 @@ Usage
 =====
 Disable apt from starting any daemons after install:
 
-```policyrcd_policy "default-policy" do
-  action :create
-  default-policy true
-  status "101"
-end```
+
+    policyrcd_policy "default-policy" do
+      action :create
+      default-policy true
+      status "101"
+    end
 
 Disable apt from taking any actions with apache2
 ```policyrcd_policy "apache2" do
